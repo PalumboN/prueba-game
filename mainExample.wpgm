@@ -7,5 +7,6 @@ program PepitaGame {
 	game.height(10)
 	game.width(10)
 	game.addVisualCharacter(pepita)
+	keyboard.space().onPressDo({ game.say(pepita, "HOLA!") ; game.sound("musica.mp3").play() })
 	game.start()
 }
